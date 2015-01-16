@@ -1,0 +1,67 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\moderncvstyle{classic} 
+\moderncvcolor{grey}    
+\usepackage[utf8]{inputenc}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+% personal data
+\name{Gilvan}{Vieira}
+\address{Engenheiro Humberto S. Camargo, 1137}{Campinas, São Paulo}{Brazil}
+\phone[mobile]{+55~(19)~98317~7945}
+\email{gilvandsv@gmail.com}
+
+\begin{document}
+\makecvtitle
+
+\section{Education}
+\cventry{2015--current}{PhD Candidate Computer Science}{University of Campinas (UNICAMP)}{}{}{}
+\cventry{2013--2015}{MSc Candidate Computer Science}{University of Campinas (UNICAMP)}{}{}{}
+\cventry{2008--2013}{BSc Computer Science}{Pontifical Catholic University of Goias}{}{}{}
+
+\section{Master thesis}
+\cvitem{title}{\emph{Acceleration of Finite Element NeoPZ library in NUMA Processors}}
+\cvitem{supervisors}{Prof. Dr. Edson Borin and Phillipe R.B. Devloo}
+\cvitem{description}{In NUMA architectures the naive distribution of data will hurt the performance. In this work we propose a template for the data migration and apply in the Finite Element library NeoPZ using a real civil engineering application.}
+
+\section{Experience}
+%\subsection{Vocational}
+\cventry{2013--current}{Researcher}{Computational Mechanics Laboratory}{Campinas - SP, Brazil}{}{The Laboratory of Computational Mechanics is a permanent laboratory of the Department of Structures of the Faculty of Civil Engineering at UNICAMP who has as objective create applications for automate the solution of civil engineering problems.\newline{}%
+Detailed achievements:%
+\begin{itemize}%
+\item I implemented in the Finite Element library NeoPZ a graph conversion method, where the entry is a mesh and the output a compressed sparse row graph to be used in the boost Cuthill–McKee implementation with a 2.4x speedup;
+\item I execute in a daily basis the profiling and code optimization in the Finite Element Library NeoPZ, including changes in data structures, memory access patterns and including optimized libraries like Intel TBB and MKL;
+\end{itemize}}
+
+\cventry{2011--2012}{Internship}{DACT Eletrobras Furnas}{Goiania - GO, Brazil}{}{The internship consisted in create applications and tools to support the laboratory of concrete technology. The Eletrobras Furnas is a state company with expertise in the construction of hydroelectrics and energy supply.\newline{}%
+Detailed achievements:%
+\begin{itemize}%
+\item I used data mining techniques for remove data noise and get consistency on physical and chemical data of high-performance concrete materials using Microsoft Excel;
+\item I developed a file converter for two legacy simulation applications using C++ and QT to create the graphical interface;
+\item I developed an application to adjust mechanical properties functions by non-linear regression for concrete using also C++ and QT.
+\end{itemize}}
+
+\section{Honors \& Awards}
+\cventry{2014}{Facebook World Hackathon}{Participant}{Menlo Park, CA}{}{}
+\cventry{2014}{Facebook Hackathon São Paulo}{First Place}{São Paulo, Brazil}{}{}
+\cventry{2014}{Parallel Programming Challenge ERAD-SP}{First Place}{São Paulo, Brazil}{}{}
+\cventry{2014}{Intel Student Expert UNICAMP}{Nominated}{São Paulo, Brazil}{}{}
+
+\section{Languages}
+\cvitemwithcomment{Portuguese}{Native}{Mother Tongue}
+\cvitemwithcomment{English}{Fluent}{}
+
+\section{Computer skills}
+\cvdoubleitem{Languages}{C, C++, Java, Python}{}{}
+\cvdoubleitem{Tools}{Intel VTune, Linux perf}{}{}
+\cvdoubleitem{Libraries}{boost, Intel TBB, OpenMP}{}{}
+
+\end{document}
