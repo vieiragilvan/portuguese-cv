@@ -14,7 +14,7 @@
 
 \usepackage[a4paper,margin=2cm]{geometry}
 % personal data
-\name{Gilvan}{Vieira}
+\name{Gilvan}{S. Vieira}
 \address{Engenheiro Humberto S. Camargo, 1137}{Campinas, São Paulo}{Brazil}
 \phone[mobile]{+55~(19)~98317~7945}
 \email{gilvandsv@gmail.com}
@@ -22,46 +22,39 @@
 \begin{document}
 \makecvtitle
 
-\section{Education}
-\cventry{2015--current}{PhD Candidate Computer Science}{University of Campinas (UNICAMP)}{}{}{}
-\cventry{2013--2015}{MSc Candidate Computer Science}{University of Campinas (UNICAMP)}{}{}{}
-\cventry{2008--2013}{BSc Computer Science}{Pontifical Catholic University of Goias}{}{}{}
+\section{Formação Acadêmica}
+\cventry{2013--Março 2015}{Mestrado em Ciência da Computação}{Universidade Estadual de Campinas, UNICAMP}{\textbf{Título}: Aceleração da biblioteca de elementos finitos NeoPZ em processadores NUMA\newline{} \textbf{Orientadores}: Edson Borin (IC) e Philippe R. B. Devloo (FEC)}{}{}
+\cventry{2008--2013}{Bacharel em Ciência da Computação}{Pontifícia Universidade Católica de Goiás, PUC GOIÁS}{\textbf{Título}: Roteamento de Veículos na Cadeia de Suprimentos \newline{} \textbf{Orientador}: Sibelius Lellis Vieira}{}{}
 
-\section{Master thesis}
-\cvitem{title}{\emph{Acceleration of Finite Element NeoPZ library in NUMA Processors}}
-\cvitem{supervisors}{Prof. Dr. Edson Borin and Phillipe R.B. Devloo}
-\cvitem{description}{In NUMA architectures the naive distribution of data will hurt the performance. In this work we propose a template for the data migration and apply in the Finite Element library NeoPZ using a real civil engineering application.}
-
-\section{Experience}
+\section{Atuação Profissional}
 %\subsection{Vocational}
-\cventry{2013--current}{Researcher}{Computational Mechanics Laboratory}{Campinas - SP, Brazil}{}{The Laboratory of Computational Mechanics is a permanent laboratory of the Department of Structures of the Faculty of Civil Engineering at UNICAMP who has as objective create applications for automate the solution of civil engineering problems.\newline{}%
-Detailed achievements:%
-\begin{itemize}%
-\item I implemented in the Finite Element library NeoPZ a graph conversion method, where the entry is a mesh and the output a compressed sparse row graph to be used in the boost Cuthill–McKee implementation with a 2.4x speedup;
-\item I execute in a daily basis the profiling and code optimization in the Finite Element Library NeoPZ, including changes in data structures, memory access patterns and including optimized libraries like Intel TBB and MKL;
-\end{itemize}}
+\cventry{2013--current}{Pesquisador}{Laboratório de Mecânica Computacional, FEC UNICAMP}{Campinas - SP}{}{O LabMeC é um laboratório pertencente ao Departamento de Estruturas da Faculdade de Engenharia Civil, Arquitetura e Urbanismo (FEC) da Unicamp e visa o suporte a pesquisas na área de Mecânica Computacional, desenvolvendo programas de computador para automatizar o processo de resolução de problemas de engenharia.\newline{}%
+\textbf{Detalhes}: Executo diariamente o perfilamento e otimização de código na biblioteca de elementos finitos NeoPZ, incluindo mudanças em estruturas de dados, padrões de acessos à memória e adição de bibliotecas como MKL, TBB e OpenMP.}
 
-\cventry{2011--2012}{Internship}{DACT Eletrobras Furnas}{Goiania - GO, Brazil}{}{The internship consisted in create applications and tools to support the laboratory of concrete technology. The Eletrobras Furnas is a state company with expertise in the construction of hydroelectrics and energy supply.\newline{}%
-Detailed achievements:%
-\begin{itemize}%
-\item I used data mining techniques for remove data noise and get consistency on physical and chemical data of high-performance concrete materials using Microsoft Excel;
-\item I developed a file converter for two legacy simulation applications using C++ and QT to create the graphical interface;
-\item I developed an application to adjust mechanical properties functions by non-linear regression for concrete using also C++ and QT.
-\end{itemize}}
+\cventry{2011--2012}{Estágio}{DACT Eletrobras Furnas}{Goiânia - GO}{}{Durante meu estágio no Departamento de Apoio e Controle Técnico (DACT) desenvolvi aplicações para apoiar a pesquisa em formulações físicas de concreto de alto desempenho.\newline{}%
+\textbf{Detalhes}: Desenvoli aplicações utilizando C/C++ e QT com interfaces gráficas para conversão de arquivos entre aplicações legadas e para regressão não-linear de curvas de fluência.}
 
-\section{Honors \& Awards}
-\cventry{2014}{Facebook World Hackathon}{Participant}{Menlo Park, CA}{}{}
-\cventry{2014}{Facebook Hackathon São Paulo}{First Place}{São Paulo, Brazil}{}{}
-\cventry{2014}{Parallel Programming Challenge ERAD-SP}{First Place}{São Paulo, Brazil}{}{}
-\cventry{2014}{Intel Student Expert UNICAMP}{Nominated}{São Paulo, Brazil}{}{}
+\section{Prêmios \& Títulos}
+\cventry{2014}{Facebook World Hackathon}{Participante}{Menlo Park, CA, EUA \newline{}% 
+Este evento reuniu todos os vencedores das competições ao redor do mundo e foi realizado na sede da empresa na Califórnia
+}{}{}
+\cventry{2014}{Facebook Hackathon São Paulo}{Primeiro Lugar}{São Paulo, Brasil \newline{}% 
+O hackathon é um evento que reúne programadores, designers e outros profissionais ligados ao desenvolvimento de software para uma maratona de programação, cujo objetivo é desenvolver um protótipo em 24 horas
+}{}{}
+\cventry{2014}{Desafio de Programação Paralela ERAD-SP}{Primeiro Lugar}{São Paulo, Brasil \newline{}% 
+O desafio consistiu na resolução paralela de um problema específico da área de computação em um ambiente com processadores Intel Xeon (16 cores) e um coprocessador Intel Xeon Phi (60 cores) utilizando OpenMP e/ou POSIX Threads}{}{}
+%
+\cventry{2014}{Intel Student Expert UNICAMP}{Nomeação}{São Paulo, Brasil \newline{}% 
+O programa Intel Student Expert é uma oportunidade aos estudantes para atuarem como
+“embaixadores” da Intel dentro dos seus respectivos campus universitários,
+promovendo o Programa Acadêmico da Intel com as seguintes iniciativas}{}{}
 
-\section{Languages}
-\cvitemwithcomment{Portuguese}{Native}{Mother Tongue}
-\cvitemwithcomment{English}{Fluent}{}
+\section{Idiomas}
+\cvitemwithcomment{Inglês}{Profissional Avançado}{}
 
-\section{Computer skills}
-\cvdoubleitem{Languages}{C, C++, Java, Python}{}{}
-\cvdoubleitem{Tools}{Intel VTune, Linux perf}{}{}
-\cvdoubleitem{Libraries}{boost, Intel TBB, OpenMP}{}{}
+\section{Habilidades}
+\cvdoubleitem{\emph{Linguagens}}{C, C++}{}{}
+\cvdoubleitem{\emph{Ferramentas}}{Intel VTune, Linux perf, XCode}{}{}
+\cvdoubleitem{\emph{Bibliotecas}}{boost, Intel TBB, OpenMP}{}{}
 
 \end{document}
